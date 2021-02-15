@@ -2,7 +2,7 @@
 Simple tool to check for new PRs by username or organization
 
 # Usage
-1. Build the binary (inside the code directory):
+1. Build the binary (inside the code directory):   
 `go build`
 
 2. Export your github token: 
