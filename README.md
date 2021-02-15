@@ -1,7 +1,18 @@
 # PRCheckCtl
+Simple tool to check for new PRs by username or organization
 
 # Usage
 
 1. Export your github token: export GH_TOKEN=<your_github_token>
 
-2. Run the binary: prcheckctl --username <github_username or org> --pool <time to check for new PRs>
+2. Run the binary:   
+`prcheckctl --username <github_username or org> --pool <time to check for new PRs>`
+
+## Examples
+
+1. Check for new PRs in my repositories using 15 seconds between every check:   
+`prcheckctl --username edsoncelio--pool 15`
+
+To get help, use:
+`prcheckctl --help`
+
