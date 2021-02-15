@@ -1,5 +1,7 @@
 # PRCheckCtl
-Simple tool to check for new PRs by username or organization
+Simple tool to check for new PRs by username or organization on Github
+
+> Just for practice Golang!
 
 # Usage
 1. Build the binary (inside the code directory):   
@@ -23,3 +25,4 @@ To get help, use:
 - [ ] Tests
 - [ ] Docs
 - [ ] Integrations
+- [ ] Refactor some erros and treat exceptions!
