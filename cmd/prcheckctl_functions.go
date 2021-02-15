@@ -32,7 +32,7 @@ func getAllPRs(user string, pool int) {
 
 	var countPrsActual int = 0
 	var countPrsNew int = 0
-	var startScript string = "yes"
+	var startScript bool = true
 	var countNew int = 0
 
 	var prs []*github.PullRequest
@@ -60,7 +60,7 @@ func getAllPRs(user string, pool int) {
 
 		countPrsActual = countPullRequests(repos, client, ctx, prOpts, owner, countPrsActual)
 
-		if countPrsActual != countPrsNew || startScript == "yes" {
+		if countPrsActual != countPrsNew || startScript {
 			fmt.Println("Showing open PRs...")
 
 			if countPrsNew > 0 {
@@ -103,7 +103,7 @@ func getAllPRs(user string, pool int) {
 		fmt.Println("Waiting ", pool, "seconds...")
 		time.Sleep(time.Duration(pool) * time.Second)
 
-		startScript = "no"
+		startScript = false
 
 	}
 }
