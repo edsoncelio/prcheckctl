@@ -1,7 +1,5 @@
 # PRCheckCtl
 
-
-
 # Usage
 
 1. Export your github token: export GH_TOKEN=<your_github_token>
