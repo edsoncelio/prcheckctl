@@ -2,11 +2,14 @@
 Simple tool to check for new PRs by username or organization
 
 # Usage
+1. Build the binary (inside the code directory):
+`go build`
 
-1. Export your github token: export GH_TOKEN=<your_github_token>
+2. Export your github token: 
+`export GH_TOKEN=<your_github_token>`
 
-2. Run the binary:   
-`prcheckctl --username <github_username or org> --pool <time to check for new PRs>`
+3. Run the binary:   
+`./prcheckctl --username <github_username or org> --pool <time to check for new PRs>`
 
 ## Examples
 
@@ -16,3 +19,7 @@ Simple tool to check for new PRs by username or organization
 To get help, use:
 `prcheckctl --help`
 
+# TODO
+- [ ] Tests
+- [ ] Docs
+- [ ] Integrations
